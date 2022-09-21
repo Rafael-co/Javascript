@@ -23,3 +23,5 @@ console.log(texto.concat(" deu bom"))
 console.log(texto.substring(5, 10)) // ele corta a string a partir d indice colocado
 
 console.log(texto.startsWith(' ')) // ele verifica se a string incia com o txto entre parenteses e retorna true oi false
+
+console.log(texto.trim());
