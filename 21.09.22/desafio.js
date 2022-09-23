@@ -9,16 +9,25 @@
     4 Em três vezes, preço normal de etiqueta mais juros de 10%
  */
 
-const precoProduto = parseFloat(prompt('qual o preço do produto?'));
+let precoProduto = parseFloat(prompt('qual o preço do produto?'));
+while (isNaN(precoProduto) == true || precoProduto <= 0){
+          precoProduto= parseFloat(prompt('insira um numero valido'));
+}
 
-const mensagem = `
+const mensagem = 
+`
 informe o metodo de pagamento:
 Digite 1 para pagamento em dinheiro
 Digite 2 para pagamento em cheque
 Digite 3 para pagamento com cartao
 `;
-const metodoDePagamento = prompt(mensagem)
 
+let metodoDePagamento = parseInt(prompt(mensagem))
+while(metodoDePagamento >= 4 || metodoDePagamento == 0 ||isNaN(metodoDePagamento) == true ){
+            alert("opção invalida")
+            metodoDePagamento = parseInt(prompt(mensagem))
+
+}
 if (metodoDePagamento ==1 || metodoDePagamento ==2) {
     const precoFinal= precoProduto*0.9;
 
