@@ -13,7 +13,7 @@ let produtos = []
  }
 
 
- for (i = 0;i < 4;i++){
+ for (i = 0;i < 15;i++){
     produto.nome=(prompt(`Digite o nome do ${i+1}º produto`));
     produto.marca=(prompt(`Digite a marca do(a) ${produto.nome} `))
     produto.foto=(prompt(`Insira o link da imagem do(a) ${produto.nome}`))
