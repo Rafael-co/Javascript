@@ -3,17 +3,19 @@
  */
 let produtos = []
 
- let produto ={
-    nome:'',
-    marca:'',
-    foto:'',
-    precoUnitario:0,
-    estoque:0,
-
- }
+ 
 
 
- for (i = 0;i < 15;i++){
+ for (i = 0;i < 2;i++){
+   let produto ={
+      nome:'',
+      marca:'',
+      foto:'',
+      precoUnitario:0,
+      estoque:0,
+  
+   }
+   
     produto.nome=(prompt(`Digite o nome do ${i+1}º produto`));
     produto.marca=(prompt(`Digite a marca do(a) ${produto.nome} `))
     produto.foto=(prompt(`Insira o link da imagem do(a) ${produto.nome}`))
